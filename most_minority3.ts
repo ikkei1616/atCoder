@@ -1,6 +1,6 @@
 const input = await new Response(Deno.stdin.readable).text();
 
-const [firstLine, ...line] = input.trim().split("\n");
+const [firstLine, ...line] = input.trim().split( "\n");
 
 const [participantsNumStr, voteNumStr] = firstLine.split(" ");
 const participantNum = Number(participantsNumStr);
